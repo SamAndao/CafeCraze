@@ -193,7 +193,7 @@ section {
     line-height: 35px;
 }
 
-.About-Us, .Top {
+.About-Us, .Shops {
     min-height: 800px;
     padding: 60px;
 }
@@ -209,17 +209,35 @@ section {
     font-size: larger;
 }
 
-.Top{
-    background-color: antiquewhite;
+/*Shops*/
+.Shops{
+    background-image: url(Images/cafe-background.png);
     font-size: larger;
 }
 
-.Top h1{
+.Shops h1{
     font-size: xx-large;
     margin-bottom: 30px;
 }
 
-.waves {
+.rectangle-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: burlywood;
+    height:600px;
+    border: 2px solid black;
+}
+
+.rectangle-container button {
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+}
+
+.waves, .waves2, .waves3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -229,19 +247,89 @@ section {
     transform: rotate(180deg);
 }
 
-.waves svg {
+.waves svg, .waves2 svg, .waves3 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+    width: calc(155% + 1.3px);
+    height: 144px;
 }
 
 .waves .shape-fill {
-    fill: antiquewhite;
+    fill: #845C44;
 }
 
+.waves2 .shape-fill {
+    fill: burlywood;
+}
+
+/* .waves3 .shape-fill {
+    fill: #d2b48c;
+} */
+
+
+/*Footer*/
+footer {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    background-color: burlywood;
+}
 
  
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Change the header to a column layout on smaller screens */
+        height: auto;
+    }
 
+    .logo {
+        margin: 20px 0;
+    }
 
+    ul.navbar {
+        flex-direction: column; /* Change the navigation to a column layout on smaller screens */
+        text-align: center;
+    }
 
+    ul a {
+        margin-right: 0;
+    }
+
+    ul button {
+        margin-top: 10px;
+    }
+
+    .slideshow {
+        height: auto;
+    }
+
+    .slide-container {
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .navigation-manual,
+    .navigation-auto {
+        display: none; /* Hide the manual and auto navigation on smaller screens */
+    }
+
+    .About-Us h1 {
+        margin: 20px 0;
+    }
+
+    .rectangle-container button {
+        margin-top: 10px;
+    }
+}
+
+/* Rest of your existing CSS code remains unchanged */
