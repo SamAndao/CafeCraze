@@ -1,59 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css"> <!--pwede na daw dili i type-->
-  <title>Contact</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="penastyle.css" />
+    <!--pwede na daw dili i type-->
+    <title>Contact</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="#">CafeCraze : Mintal</a>
-        </div>
+      <div class="logo">
+        <a href="#">CafeCraze : Mintal</a>
+      </div>
 
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Shops">Shops</a></li>
-                <li><a href="https://www.youtube.com/watch?v=8ouS7G6k04A"><button type="button">Contact Us</button></a></li>
-            </ul>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Shops">Shops</a></li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=8ouS7G6k04A"
+            ><button type="button">Contact Us</button></a
+          >
+        </li>
+      </ul>
     </header>
+
     <main>
-      <section class="about">
-        <div class="about-row-1st">
-          <div class="about-content-container--1st">
-            
+      <section class="about-container-title">
+        <h1 class="about-heading">MEET THE FOUNDERS</h1>
+      </section>
+
+      <section>
+        <div class="about-row">
+          <div class="about-content-container-1st">
+            <img class="about-background" src="/Images/cafe-background.png" />
+            <div class="about-content-1st"></div>
+          </div>
+          <div class="about-content-container-2nd">
+            <img class="about-background" src="/Images/cafe-background3.png" />
+            <div class="about-content-2nd">
+              <h2 class="about-content-heading">MR. LANCE ANDREI RECLA</h2>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate commodi ex placeat perspiciatis ea. Facere dolorum
+                eligendi ratione quis soluta maiores dolorem? Ipsam et, vel
+                error architecto quidem tenetur natus?
+              </p>
+            </div>
           </div>
         </div>
-        <div class="about-row-2nd">
-          <div class="about-content-container--2nd">
-            <h2>HELLO</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium minus, ipsam iure asperiores sed libero eveniet molestias perspiciatis cupiditate exercitationem numquam assumenda nesciunt rerum reprehenderit neque, nihil nostrum facere.
-            </p>
+        <div class="about-row">
+          <div class="about-content-container-2nd">
+            <img class="about-background" src="/Images/cafe-background3.png" />
+            <div class="about-content-2nd">
+              <h2 class="about-content-heading">MR. LANCE ANDREI RECLA</h2>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate commodi ex placeat perspiciatis ea. Facere dolorum
+                eligendi ratione quis soluta maiores dolorem? Ipsam et, vel
+                error architecto quidem tenetur natus?
+              </p>
+            </div>
+          </div>
+          <div class="about-content-container-1st">
+            <img class="about-background" src="/Images/cafe-background.png" />
+            <div class="about-content-1st"></div>
           </div>
         </div>
       </section>
-    
-  <!-- <div class="container">
-    <div class="form">
-      <form action="mailto:me@example.com" method="post">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="text" name="subject" placeholder="Subject" required />
-        <textarea style="resize: none;" name="message" placeholder="Message" required></textarea>
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    <div class="text">
-      <img src="Images/1330314.png" style="width: 15vw; height: 15vh; object-fit: contain; z-index: 5;" alt="profile-pic">
-    </div>
-  </div> -->
-  </main>
-</body>
+      <section class="about-container-title">
+        <h1 class="about-heading">CONTACT US</h1>
+      </section>
+      <section class="container">
+        <div class="main-container">
+          <div class="form">
+            <form action="mailto:me@example.com" method="post">
+              <label class="label" for="name">Name:</label>
+              <input autocomplete="off" id="name" type="text" name="name" placeholder="Full name" required />
+              <label class="label" for="email">Email Address:</label>
+              <input autocomplete="off" id="email" type="email" name="email" placeholder="Ex. name@example.com" required />
+              <label class="label" for="subject">Subject:</label>
+              <input autocomplete="off" id="subject" type="text" name="subject" placeholder="Subject" required />
+              <label id="subject" class="label"for="message">Message:</label>
+              <textarea id="message" style="resize: none;" name="message" placeholder="Message" required></textarea>
+              <input type="submit" value="Submit"/>
+            </form>
+          </div>
+          <div class="text">
+            <img class="contact-image" src="Images/1330314.png" alt="profile-pic">
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
