@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 5){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">CafeCraze : Mintal</a>  
+        </div>
+
+            <ul class="navbar">
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Shops">Shops</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8ouS7G6k04A"><button type="button">Contact Us</button></a></li>
+            </ul>
+    </header>
+
+    <section class="slideshow">
+        <div class="slide-container">
+            <div class="slider">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="Images/1330234.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/1330314.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/1338664.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/1338664.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/736461.png">
+                </div> 
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                </div>
+            </div>
+    </section>
+    <section class="Curves">
+        <section class="About-Us">
+            <div class="custom-shape-divider-top-1702135965">
+            <div class="logo-pic"><img src="Images/742320.png"></div>
+            <h1>CafeCraze: Mintal</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+            Suspendisse potenti. Nullam tincidunt ligula in odio venenatis, vitae consectetur augue tincidunt. Vestibulum tristique odio at sapien iaculis lacinia. Etiam euismod, dolor nec facilisis cursus, quam ligula scelerisque tellus, id cursus justo nunc ut sem. Integer a aliquet tortor. Praesent vel odio ac tellus elementum semper. Phasellus venenatis urna ut justo varius, ac ultricies ligula luctus. Aliquam erat volutpat. Nulla facilisi. Fusce sit amet varius purus. Nulla facilisi. Integer vitae tristique mauris, et imperdiet purus. Vivamus efficitur bibendum est, vitae ullamcorper ligula elementum ut.
+            </p> 
+            <div class="waves">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>  
+        </section>
+        <section class="Shops">
+            <div class="rectangle-container">   
+                <h1>View Shops</h1>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+                    Suspendisse potenti. Nullam tincidunt ligula in odio venenatis, vitae consectetur augue tincidunt. Vestibulum tristique odio at sapien iaculis lacinia. Etiam euismod, dolor nec facilisis cursus, quam ligula scelerisque tellus, id cursus justo nunc ut sem. Integer a aliquet tortor. Praesent vel odio ac tellus elementum semper. Phasellus venenatis urna ut justo varius, ac ultricies ligula luctus. Aliquam erat volutpat. Nulla facilisi. Fusce sit amet varius purus. Nulla facilisi. Integer vitae tristique mauris, et imperdiet purus. Vivamus efficitur bibendum est, vitae ullamcorper ligula elementum ut.
+                    </p>
+                    <button type="button" class="shop-now">View Shops</button>
+            </div>
+            <div class="waves2">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+            Suspendisse potenti. Nullam tincidunt ligula in odio venenatis, vitae consectetur augue tincidunt. Vestibulum tristique odio at sapien iaculis lacinia. Etiam euismod, dolor nec facilisis cursus, quam ligula scelerisque tellus, id cursus justo nunc ut sem. Integer a aliquet tortor. Praesent vel odio ac tellus elementum semper. Phasellus venenatis urna ut justo varius, ac ultricies ligula luctus. Aliquam erat volutpat. Nulla facilisi. Fusce sit amet varius purus. Nulla facilisi. Integer vitae tristique mauris, et imperdiet purus. Vivamus efficitur bibendum est, vitae ullamcorper ligula elementum ut.
+        </p>
+    </footer>
+</body>

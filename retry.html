@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="retrystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 5){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo" id="Home">
+            <a href="#">CafeCraze : Mintal</a>  
+        </div>
+
+            <ul class="navbar">
+                <li><a href="retry.html">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="shops.html">Shops</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8ouS7G6k04A"><button type="button">Contact Us</button></a></li>
+            </ul>
+    </header>
+    
+    <section class="opening-text">
+        <h1>HELLO!!</h1>
+        <p>We are CafeCraze: Mintal!</p>
+        <p>Here to deliver the most important information about cafe places in Mintal</p>
+        <p>So, don't hesitate and explore the website for you to</p>
+        <h1>Sip and Savor at any Range!!!</h1>
+    </section>
+
+    <section class="slideshow">
+        <div class="slide-container">
+            <div class="slider">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="Images/Matwels_background.jpg">
+                </div>
+                <div class="slide">
+                    <img src="Images/1330314.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/1338664.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/1338664.png">
+                </div>
+                <div class="slide">
+                    <img src="Images/736461.png">
+                </div> 
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                </div>
+            </div>
+    </section>
+
+    <section class="about-us">
+        <div class="logo-pic"><img src="Images/CafeCraze Logo.png"></div>
+        <div class="text-box">
+            <h1>CafeCraze: Mintal</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+            Suspendisse potenti. Nullam tincidunt ligula in odio venenatis, vitae consectetur augue tincidunt. Vestibulum tristique odio at sapien iaculis lacinia. Etiam euismod, dolor nec facilisis cursus, quam ligula scelerisque tellus, id cursus justo nunc ut sem. Integer a aliquet tortor. Praesent vel odio ac tellus elementum semper. Phasellus venenatis urna ut justo varius, ac ultricies ligula luctus. Aliquam erat volutpat. Nulla facilisi. Fusce sit amet varius purus. Nulla facilisi. Integer vitae tristique mauris, et imperdiet purus. Vivamus efficitur bibendum est, vitae ullamcorper ligula elementum ut.
+            </p> 
+        </div>
+    </section>
+
+    <section class="top-budget-stores">
+        <h1> Top Budget Stores!!</h1>
+        <div class="top-container">
+            <img src="Images/3rd.png" alt="1st Medal" class="bronze">   
+            <div class="top">
+                <img src="Images/Urban_Grind.jpg">
+                <div class="content">
+                    <p>Urban Grind</p>
+                </div>
+            </div>
+            <img src="Images/1st.png" alt="1st Medal" class="gold">   
+            <div class="top">
+                <img src="Images/MW.jpg">
+                <div class="content">
+                    <p>Matwels</p>
+                </div>
+            </div>
+            <img src="Images/2nd.png" alt="1st Medal" class="silver">   
+            <div class="top">
+                <img src="Images/BB.jpg">
+                <div class="content">
+                    <p>Booba Booze</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-expensive-stores">
+        <h1> Top $$$ Highly Valued Stores!!</h1>
+        <div class="top-container">
+            <img src="Images/3rd.png" alt="1st Medal" class="bronze">   
+            <div class="top">
+                <img src="Images/Tea Heaven.jpg">
+                <div class="content">
+                    <p>Tea Heaven</p>
+                </div>
+            </div>
+            <img src="Images/1st.png" alt="1st Medal" class="gold">  
+            <div class="top">
+                <img src="Images/CraftCoffeejpg.jpg">
+                <div class="content">
+                    <p>Craft Coffeejpg</p>
+                </div>
+            </div>
+            <img src="Images/2nd.png" alt="1st Medal" class="silver">   
+            <div class="top">
+                <img src="Images/Coffee Project.jpg">
+                <div class="content">
+                    <p>Coffee Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Shops">
+        <div class="rectangle-container">   
+            <h1>View Shops</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+                Suspendisse potenti. Nullam tincidunt ligula in odio venenatis, vitae consectetur augue tincidunt. Vestibulum tristique odio at sapien iaculis lacinia. Etiam euismod, dolor nec facilisis cursus, quam ligula scelerisque tellus, id cursus justo nunc ut sem. Integer a aliquet tortor. Praesent vel odio ac tellus elementum semper. Phasellus venenatis urna ut justo varius, ac ultricies ligula luctus. Aliquam erat volutpat. Nulla facilisi. Fusce sit amet varius purus. Nulla facilisi. Integer vitae tristique mauris, et imperdiet purus. Vivamus efficitur bibendum est, vitae ullamcorper ligula elementum ut.
+                </p>
+                <div class="button1">
+                <button type="button" class="shop-now">View Shops</button>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Footer</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo ut odio varius tristique. Proin vel ligula vel justo condimentum eleifend id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur eu quam id elit fringilla tristique. Aenean hendrerit justo in velit dapibus, a cursus neque fermentum. Integer vestibulum massa quis ex facilisis feugiat. Curabitur id arcu vitae nulla fringilla congue. Nunc rhoncus augue eget turpis varius, vel sodales elit tincidunt. In hac habitasse platea dictumst. Sed vel tincidunt odio. Quisque sit amet nunc nec eros laoreet aliquet.
+        </p>
+        
+        <div class="wrapper-icons">
+            <a class="icon-btn" href="https://www.facebook.com/markjaily.pena.9">
+                <div class="icon"> <i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+            <a class="icon-btn" href="https://www.facebook.com/markjaily.pena.9">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i></div>
+                <span>Twitter</span>
+            <a class="icon-btn" href="https://www.facebook.com/markjaily.pena.9">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+        </div>
+    </footer>
+</body>

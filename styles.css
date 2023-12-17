@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+/* Navigation Bar CSS */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #d2b48c;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.logo a{
+    color: aliceblue;
+}
+
+ul.navbar {
+    display: flex; 
+    align-items: center;
+}
+
+ul a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+}
+
+
+ul button {
+    cursor: pointer;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+/* Slideshow CSS */
+.slideshow {
+    height: 740px ;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.slide-container {
+    width: 100%;
+    height: 750px;  
+    overflow-x: hidden;
+}
+
+.slider {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slider input{
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 740px;
+}
+
+.navigation-manual{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 180px;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: antiquewhite;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 680px;
+}
+
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s; 
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: aliceblue;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: aliceblue;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: aliceblue;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: aliceblue;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: aliceblue;
+}
+
+/*About Us Section*/
+.logo-pic {
+    position: absolute;
+    top: 0; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    margin-top: 40px;
+}
+
+section {
+    position:relative;
+}
+
+.Curves h1, p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+}
+
+.About-Us, .Shops {
+    min-height: 800px;
+    padding: 60px;
+}
+
+.About-Us h1 {
+    margin: 200px 0 30px 0;
+    font-size: xx-large;
+}
+
+
+.About-Us {
+    background-color: #d2b48c;
+    font-size: larger;
+}
+
+/*Shops*/
+.Shops{
+    background-image: url(Images/coffee_bean.png);
+    font-size: larger;
+}
+
+.Shops h1{
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+.rectangle-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: burlywood;
+    height:60vh;
+    border: 2px solid black;
+}
+
+.rectangle-container button {
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+}
+
+.waves, .waves2, .waves3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg, .waves2 svg, .waves3 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 144px;
+}
+
+.waves .shape-fill {
+    fill: #f8ecdd;
+    
+}
+
+.waves2 .shape-fill {
+    fill: burlywood;
+}
+
+/*Footer*/
+footer {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    background-color: burlywood;
+}
+
+ 
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Change the header to a column layout on smaller screens */
+        height: auto;
+    }
+
+    .logo {
+        margin: 20px 0;
+    }
+
+    ul.navbar {
+        flex-direction: column; /* Change the navigation to a column layout on smaller screens */
+        text-align: center;
+    }
+
+    ul a {
+        margin-right: 0;
+    }
+
+    ul button {
+        margin-top: 10px;
+    }
+
+    .slideshow {
+        height: auto;
+    }
+
+    .slide-container {
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .navigation-manual,
+    .navigation-auto {
+        display: none; /* Hide the manual and auto navigation on smaller screens */
+    }
+
+    .About-Us h1 {
+        margin: 20px 0;
+    }
+
+    .rectangle-container button {
+        margin-top: 10px;
+    }
+}
+
+/* Rest of your existing CSS code remains unchanged */
