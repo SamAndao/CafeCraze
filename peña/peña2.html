@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeHouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Lexend:wght@100;300;400;500;600;700&family=Nunito:wght@200&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+
+      a {
+        box-sizing: border-box;
+      }
+  
+      html {
+        scroll-behavior: smooth;
+      }
+  
+      body {
+        margin: 0;
+      }
+  
+      .header {
+        position: relative;
+        height: 80vh;
+      }
+  
+      .header--image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+      }
+  
+      .header--title {
+        position: absolute;
+        left: 15vw;
+        top: 50vh;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+        color: #ffffcc;
+      }
+      .header--text {
+        color: white;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        position: absolute;
+        left: 15vw;
+        top: 63vh;
+        right: 10vh;
+      }
+  
+      .navigation {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffdfbe;
+      }
+  
+      .navigation--container {
+        display: flex;
+      }
+  
+      .navigation--elements {
+        color: black;
+        text-decoration: none;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0 10px;
+        font-family: "Courier New";
+      }
+  
+      .navigation--image {
+        height: 150px;
+      }
+  
+      .navigation--elements:hover {
+        color: #3a2513;
+        padding: 20px;
+      }
+  
+      .about {
+        margin: 0;
+        padding: 50px 20px;
+        background-color: #f7d9c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      .about--image {
+        width: 100px;
+      }
+  
+      .about--heading {
+        text-align: center;
+        font-family: "Lato";
+        font-size: 37px;
+      }
+  
+      .about--title {
+        text-align: center;
+        font-size: 21px;
+        font-family: "Lato";
+        padding: 10px;
+      }
+  
+      .about--text {
+        text-align: center;
+        font-family: "Lato";
+        width: 600px;
+        font-size: 18px;
+      }
+  
+      h2, h4 {
+        margin: 0;
+      }
+  
+      .services--row {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+      }
+  
+      .services--background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+      }
+  
+      .services--content--container--coffee {
+        width: 50%;
+        position: relative;
+      }
+  
+      .services--content--coffee {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        background-color: #faedcb;
+        object-fit: cover;
+        box-shadow: 7px 5px black;
+        border-radius: 15px;
+      }
+  
+      .services--content--container--pastries {
+        width: 50%;
+        position: relative;
+      }
+  
+      .services--content--pastries {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        background-color: #faedcb;
+        object-fit: cover;
+        box-shadow: 7px 5px black;
+        border-radius: 15px;
+      }
+  
+      .services--content--container--catering {
+        width: 50%;
+        position: relative;
+      }
+  
+      .services--content--catering {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        background-color: #faedcb;
+        object-fit: cover;
+        box-shadow: 7px 5px black;
+        border-radius: 15px;
+      }
+  
+      .services--image {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+  
+      .services--heading { 
+        text-align: center;
+        font-family: Garamond;
+        font-size: 30px;
+      }
+  
+      .services--text {
+        text-align: center;
+        font-family: Garamond;
+        font-size: 18px;
+      }
+  
+      .above--contact {
+        margin: 0;
+        padding: 50px 20px;
+        background-color: #fffcd4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      .above--image {
+        width: 100px;
+      }
+  
+      .above--heading {
+        text-align: center;
+        font-family: "Lato";
+        font-size: 31px;
+      }
+  
+      .above--text {
+        text-align: center;
+        font-family: "Lato";
+        width: 600px;
+        font-size: 19px;
+      }
+  
+      .contact {
+        padding: 30px;
+        padding-bottom: 40px;
+        background-color: #bfaa8c;
+      }
+  
+      .contact--title {
+        font-family: Georgia;
+        font-size: 25px;
+        padding-bottom: 20px;
+      }
+  
+      .contact--email {
+        color: black;
+        text-decoration: none;
+      }
+  
+      address {
+        font-size: 18px;
+      }
+  
+      footer {
+        font-size: 18px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <section class="navigation">
+      <img
+        src="Coffeehouse.png"
+        class="navigation--image"
+      />
+      <nav id="home" class="navigation--container">
+        <a href="#home" class="navigation--elements">HOME</a>
+        <a href="#about" class="navigation--elements">ABOUT</a>
+        <a href="#services" class="navigation--elements">SERVICES</a>
+        <a href="#contact" class="navigation--elements">CONTACT</a>
+      </nav>
+    </section>
+
+    <header class="header">
+      <img
+        class="header--image"
+        src="Homebackground.jpg"
+      />
+
+      <h2 class="header--title">Coffeehouse</h2>
+      <p class="header--text">"Awaken Your Senses with Every Sip"</p>
+    </header>
+
+    <main>
+      <section id="about" class="about">
+        <img
+          class="about--image"
+          src="CoffeeDesign.png"
+        />
+        <h2 class="about--heading">A HOME FOR COFFEE ENTHUSIAST</h2>
+        <p class="about--text">
+          Established in 2023 by Mr. Mark Peña. At CoffeeHouse, we're passionate
+          about coffee. Our journey began with a simple love for the perfect
+          cup, and it has evolved into a commitment to sourcing the finest beans
+          from around the world, roasting them to perfection, and crafting
+          exceptional blends and brews.
+        </p>
+        <h4 class="about--title">"Enjoy coffee with us!"</h4>
+      </section>
+
+      <section id="services" class="services">
+        <div class="services--row">
+          <div class="services--content--container--coffee">
+            <img
+              class="services--background"
+              src="Servicebackground.jpg"
+            />
+            <div class="services--content--coffee">
+              <h2 class="services--heading">COFFEE AND ESPRESSO</h2>
+              <p class="services--text">
+                At CoffeeHouse, we're your one-stop destination for a diverse
+                range of delicious coffee and espresso delights, from soothing
+                hot brews to refreshing cold options, including creamy
+                cappuccinos and bold espresso shots, ensuring every sip is a
+                journey through the world of coffee satisfaction.
+              </p>
+            </div>
+          </div>
+          <img
+            class="services--image"
+            src="HotCoffee.png"
+          />
+        </div>
+
+        <div class="services--row">
+          <img
+            class="services--image"
+            src="Pastries.png"
+          />
+          <div class="services--content--container--pastries">
+            <img
+              class="services--background"
+              src="Servicebackground.jpg"
+            />
+            <div class="services--content--pastries">
+              <h2 class="services--heading">PASTRIES AND SNACKS</h2>
+              <p class="services--text">
+                At CoffeeHouse, we take pride in offering a delectable selection
+                of pastries and snacks that complement your coffee experience,
+                from freshly baked croissants and muffins to savory quiches and
+                sweet cookies, all designed to delight your taste buds with
+                every bite.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="services--row">
+          <div class="services--content--container--catering">
+            <img
+              class="services--background"
+              src="Servicebackground.jpg"
+            />
+            <div class="services--content--catering">
+              <h2 class="services--heading">CATERING SERVICES</h2>
+              <p class="services--text">
+                At CoffeeHouse, we are thrilled to extend our passion for
+                exceptional food and coffee to your special events through our
+                catering services, where we craft an unforgettable culinary
+                experience that combines our delicious coffee, delectable
+                pastries, and a range of delightful treats to make your
+                gatherings truly memorable.
+              </p>
+            </div>
+          </div>
+          <img
+            class="services--image"
+            src="Catering.png"
+          />
+        </div>
+      </section>
+
+      <section class="above--contact">
+        <img
+          class="above--image"
+          src="CoffeeDesign.png"
+        />
+        <h2 class="above--heading">
+          ELEVATE YOUR COFFEE EXPERIENCE WITH COFFEEHOUSE
+        </h2>
+        <p class="above--text">
+          Whether you're a coffee connoisseur or simply someone who enjoys a
+          comforting mug to start the day, we invite you to savor our
+          handcrafted coffee creations. We believe that every sip should be an
+          exquisite moment, and we're dedicated to making that possible for
+          every coffee enthusiast. Join us in celebrating the art of coffee and
+          embark on a flavorful adventure with CoffeeHouse.
+        </p>
+      </section>
+    </main>
+    <section id="contact" class="contact">
+      <h2 class="contact--title">Contact Us</h2>
+      <address>
+        Email:
+        <a class="contact--email" href="mhpena@up.edu.ph">mhpena@up.edu.ph</a
+        ><br />
+        Phone: +639273450118
+      </address>
+      <footer>Copyright &copy CoffeeHouse</footer>
+    </section>
+  </body>
+</html>
