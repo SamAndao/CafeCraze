@@ -193,15 +193,17 @@ ul button {
 .text {
   height: 500px;  
   width: 700px;
-  background-image: url(/Images/1338664.png);
+  background-image: url(/Images/cafe-background.png);
   display: flex;
   align-items:center;
   justify-content: center;
 }
 
 .contact-image {
-  width: 15vw; 
-  height: 15vh; 
-  object-fit: contain; 
-  z-index: 5;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 100px;
+    border: 2px solid black;
 }
+
