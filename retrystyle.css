@@ -12,7 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 8vh;
-    background-color: #d2b48c;
+    background-color: #453328;
 }
 
 .logo {
@@ -170,98 +170,173 @@ ul button {
 /*About Us Section*/
 .logo-pic {
     position: absolute;
-    top: 0; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
     height: 200px;
     width: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     border-radius: 100px;
-    margin-top: 40px;
+    margin-top: 50px;
+    z-index: 1000;
+    border: 2px solid black;
+}
+
+.text-box{
+    background-color: #C2B19A;
+    border: 2px solid black;
+    container-type: inline-size;
+    display: grid;
+    place-items: center;
+    transform: translateY(20%);
+    padding: 30px;
+}
+
+.text-box > p{
+    font-size: 1.5cqi;
+    text-align: justify;
 }
 
 section {
     position:relative;
 }
 
-.Curves h1, p{
+h1, p{
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 35px;
 }
 
-.About-Us, .Shops {
+.about-us, .Shops {
     min-height: 800px;
     padding: 60px;
 }
 
-.About-Us h1 {
-    margin: 200px 0 30px 0;
-    font-size: xx-large;
+.about-us h1 {
+    margin: 100px 0 30px 0;
 }
 
 
-.About-Us {
-    background-color: #d2b48c;
-    font-size: larger;
+.about-us {
+    background-image: url(Images/cafe-bg.png);
+    font-size: 24px;
+}
+
+
+/*Top*/
+.top-budget-stores, .top-expensive-stores{
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.top-budget-stores{
+    background-image: url(Images/cafe-background3.png);
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top {
+    width: 300px;
+    aspect-ratio: 2/3;
+    background-color: aquamarine;
+    transform: translateY(20%);
+    overflow: hidden;
+    border-radius: 15px;
+    border: 0.25rem solid rgb(255, 255, 255 / 15%);
+}
+
+.top img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.top:hover > img {
+    animation: pulse 800ms ease-in-out;
+}
+.top-budget-stores h1, .top-expensive-stores h1{
+    padding-top: 20px;
+}
+
+@keyframes pulse {
+    from, to {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+}
+
+
+.top-stores h1 {
+    padding-top: 2rem;
+    font-size: 35px;
+}
+
+.top-expensive-stores{
+    background-image: url(Images/cafe-bg4.png);
 }
 
 /*Shops*/
-.Shops{
-    background-image: url(Images/coffee_bean.png);
+.Shops {
+    background-image: url(Images/coffee_beanreal.png);
     font-size: larger;
-}
-
-.Shops h1{
-    font-size: xx-large;
-    margin-bottom: 30px;
-}
-
-.rectangle-container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    background-color: burlywood;
-    height:60vh;
+    color: #fff; 
+    padding: 40px 0; 
     border: 2px solid black;
 }
 
+.Shops h1 {
+    font-size: xx-large;
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: #C2B19A;
+    height: auto; 
+    border: 2px solid black;
+    text-align: justify;
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    transform: translateY(25%);
+}
+
+.rectangle-container p {
+    margin-bottom: 20px; 
+}
+
 .rectangle-container button {
-    height: 50px;
-    width: 50px;
-    left: 50%;
-    top: 50%;
+    display: block; 
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #d2b48c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
 }
 
-.waves, .waves2, .waves3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+.rectangle-container button:hover {
+    background-color: #b39c82; 
 }
 
-.waves svg, .waves2 svg, .waves3 svg {
-    position: relative;
-    display: block;
-    width: calc(155% + 1.3px);
-    height: 144px;
-}
-
-.waves .shape-fill {
-    fill: #f8ecdd;
-    
-}
-
-.waves2 .shape-fill {
-    fill: burlywood;
-}
 
 /*Footer*/
 footer {
@@ -270,7 +345,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    background-color: burlywood;
+    background-color: #453328;
 }
 
  
@@ -319,7 +394,7 @@ footer {
         display: none; /* Hide the manual and auto navigation on smaller screens */
     }
 
-    .About-Us h1 {
+    .about-us h1 {
         margin: 20px 0;
     }
 
