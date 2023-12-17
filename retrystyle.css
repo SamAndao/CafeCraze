@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     height: 8vh;
     background-color: #453328;
+    border-bottom:2px solid #f5f5fa;
 }
 
 .logo {
@@ -414,7 +415,6 @@ section {
     background-color: #b39c82; 
 }
 
-
 /*Footer*/
 footer {
     min-height: 300px;
@@ -499,57 +499,75 @@ footer {
     color: #e1306c;  
 }
 
- 
-/* Add a media query for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        height: auto;
-    }
+/* ALL SHOPS */
+.banner{
+    height: 80px;
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    font-size: 30px;
+}
 
-    .logo {
-        margin: 20px 0;
-    }
+.stores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    ul.navbar {
-        flex-direction: column; 
-        text-align: center;
-    }
+.shop-container1,
+.shop-container2 {
+    height: 50vh;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #453328;
+}
 
-    ul a {
-        margin-right: 0;
-    }
+.shop-container1 img,
+.shop-container2 img {
+    height: 38vh;
+    width: 66vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 3px solid #f5f5fa;
+    object-fit: cover;
+}
 
-    ul button {
-        margin-top: 10px;
-    }
+.shop-container1 .textbox,
+.shop-container2 .textbox {
+    color: #f5f5fa;
+    flex: 1;
+    padding: 20px;
+}
 
-    .slideshow {
-        height: auto;
-    }
+.shop-container1 .wrapper-icons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
 
-    .slide-container {
-        height: auto;
-    }
+.shop-container2 .wrapper-icons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
 
-    .slider {
-        width: 100%;
-    }
+.shop-container2 {
+    background-color: #d2b48c;
+}
 
-    .slide {
-        width: 100%;
-    }
+.shop-container2 .textbox {
+    color: #111111;
+}
 
-    .navigation-manual,
-    .navigation-auto {
-        display: none; 
-    }
+.services-pic {
+    float: right;
+}
 
-    .about-us h1 {
-        margin: 20px 0;
-    }
-
-    .rectangle-container button {
-        margin-top: 10px;
-    }
+.stores .wrapper-icons{
+    transform: translateY(115%);
 }
