@@ -82,6 +82,7 @@ ul button {
 .slide img {
     width: 100%;
     height: 740px;
+    filter: brightness(50%);
 }
 
 .navigation-manual{
@@ -167,6 +168,26 @@ ul button {
     background-color: aliceblue;
 }
 
+.opening-text{
+    position: absolute;
+    z-index: 1001;
+    color: #fff;
+    padding-left: 50px;
+    transform: translateY(100%);
+}
+
+.opening-text h1:nth-of-type(1) {
+    font-size: 45px;
+}
+.opening-text h1:nth-of-type(2) {
+    font-size: 45px;
+    margin-top: 50px;
+}
+.opening-text p:nth-of-type(1) {
+    font-size: 30px;
+}
+
+
 /*About Us Section*/
 .logo-pic {
     position: absolute;
@@ -203,12 +224,6 @@ section {
     position:relative;
 }
 
-h1, p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 35px;
-}
 
 .about-us, .Shops {
     min-height: 800px;
@@ -218,7 +233,6 @@ h1, p{
 .about-us h1 {
     margin: 100px 0 30px 0;
 }
-
 
 .about-us {
     background-image: url(Images/cafe-bg.png);
@@ -240,26 +254,70 @@ h1, p{
     background-image: url(Images/cafe-background3.png);
 }
 
+.top-budget-stores h1, .top-expensive-stores h1{
+    text-align: center;
+    z-index: 1;
+}
+
 .top-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.top-container .top:nth-of-type(1) {
+   transform: translateY(20%);
+}
+
+.top-container .top:nth-of-type(2) {
+    transform: translateY(10%);
+}
+
+ .top-container .top:nth-of-type(3) {
+    transform: translateY(20%);
+}
+
 .top {
     width: 300px;
     aspect-ratio: 2/3;
-    background-color: aquamarine;
-    transform: translateY(20%);
+    background-color: burlywood;
+    transform: translateY(16%);
     overflow: hidden;
     border-radius: 15px;
     border: 0.25rem solid rgb(255, 255, 255 / 15%);
+    display:grid;
+    place-items: center;
+    border: 10px black solid;
+    z-index: 2;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+    display: grid;
+    place-items: center;
+    color: aliceblue;
+}
+
+.content:hover{
+    opacity: 1;
+}
+
+.content p{
+    font-size: 40px;
 }
 
 .top img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    filter: brightness(60%);
 }
 
 .top:hover > img {
@@ -267,6 +325,25 @@ h1, p{
 }
 .top-budget-stores h1, .top-expensive-stores h1{
     padding-top: 20px;
+}
+
+.gold, .silver, .bronze {
+    position: absolute;
+    z-index: 1000;
+    height: 30%;
+    width: auto;
+}
+
+.gold{
+    transform: translateY(135%) translateX(45%);
+}
+
+.silver{
+    transform: translateY(155%) translateX(260%);
+}
+
+.bronze{
+    transform: translateY(155%) translateX(-170%);
 }
 
 @keyframes pulse {
@@ -299,7 +376,7 @@ h1, p{
 
 .Shops h1 {
     font-size: xx-large;
-    margin-bottom: 20px; /* Reduced margin for better spacing */
+    margin-bottom: 20px; 
 }
 
 .rectangle-container {
@@ -344,15 +421,89 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
     background-color: #453328;
+}
+
+/*Icons*/
+.wrapper-icons .icon-btn{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #C2B19A;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    margin-top: 20px
+}
+
+.wrapper-icons{
+    transform: translateY(180%);
+}
+
+.wrapper-icons .icon-btn:hover{
+    width: 170px;
+}
+
+.wrapper-icons .icon-btn .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-icons .icon-btn:nth-child(1):hover .icon{
+   background-color: #4267b2;
+}
+.wrapper-icons .icon-btn:nth-child(2):hover .icon{
+   background-color: #1da1f2;
+}
+.wrapper-icons .icon-btn:nth-child(3):hover .icon{
+   background-color: #e1306c;  
+}
+
+.wrapper-icons .icon-btn .icon i{
+    font-size: 25px;
+    line-height: 50px;
+    transform: translateX(50%);
+    color: white;
+}
+
+.wrapper-icons .icon-btn:nth-child(1) .icon i{
+    margin-left: 8px;
+}
+
+.wrapper-icons .icon-btn:nth-child(3) .icon i{
+    margin-left: 3px;
+}
+
+.wrapper-icons .icon-btn span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-icons .icon-btn:nth-child(1) span{
+    color: #4267b2;
+}
+ .wrapper-icons .icon-btn:nth-child(2) span{
+    color: #1da1f2;
+}
+ .wrapper-icons .icon-btn:nth-child(3) span{
+    color: #e1306c;  
 }
 
  
 /* Add a media query for smaller screens */
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column; /* Change the header to a column layout on smaller screens */
+        flex-direction: column; 
         height: auto;
     }
 
@@ -361,7 +512,7 @@ footer {
     }
 
     ul.navbar {
-        flex-direction: column; /* Change the navigation to a column layout on smaller screens */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -391,7 +542,7 @@ footer {
 
     .navigation-manual,
     .navigation-auto {
-        display: none; /* Hide the manual and auto navigation on smaller screens */
+        display: none; 
     }
 
     .about-us h1 {
@@ -402,5 +553,3 @@ footer {
         margin-top: 10px;
     }
 }
-
-/* Rest of your existing CSS code remains unchanged */
