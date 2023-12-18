@@ -5,7 +5,37 @@
     text-decoration: none;
     outline: none;
     border: none;
+    font-family: Genty;
 }
+
+@font-face {
+    font-family: Genty;
+    src: url(Images/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Genty Sans;
+    src: url(Images/GentySans-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #0148ad;
+    border-radius: .5rem;
+}
+
 /* Navigation Bar CSS */
 header {
     display: flex;
@@ -186,7 +216,15 @@ ul button {
 }
 .opening-text p:nth-of-type(1) {
     font-size: 30px;
+    font-family: Genty Sans;
 }
+.opening-text p:nth-of-type(2) {
+    font-family: Genty Sans;
+}
+.opening-text p:nth-of-type(3) {
+    font-family: Genty Sans;
+}
+
 
 
 /*About Us Section*/
@@ -213,12 +251,20 @@ ul button {
     display: grid;
     place-items: center;
     transform: translateY(20%);
-    padding: 30px;
+    padding: 60px;
+    border-radius: 50px;
+    line-height: 30px;
 }
 
 .text-box > p{
     font-size: 1.5cqi;
     text-align: justify;
+    font-family: Genty Sans;
+    text-align: center;
+}
+ 
+.text-box h1{
+    font-family: Genty; 
 }
 
 section {
@@ -245,19 +291,27 @@ section {
 .top-budget-stores, .top-expensive-stores{
     height: 700px;
     width: 100%;
-    border: 2px solid black;
     background-repeat: no-repeat;
-    background-position: bottom center;
     background-size: cover;
+    padding-top: 20px;
+    font-family: Genty;
 }
 
 .top-budget-stores{
-    background-image: url(Images/cafe-background3.png);
+    background-image: url(Images/budget-bg.png);
+    background-position: top center;
+    border-bottom: 10px dashed rgba(0, 0, 0, 0.3);
+}
+
+.top-expensive-stores{
+    background-image: url(Images/expensive-bg.png);
+    background-position: bottom center;
 }
 
 .top-budget-stores h1, .top-expensive-stores h1{
     text-align: center;
     z-index: 1;
+    transform: translateY(30%);
 }
 
 .top-container {
@@ -288,7 +342,7 @@ section {
     border: 0.25rem solid rgb(255, 255, 255 / 15%);
     display:grid;
     place-items: center;
-    border: 10px black solid;
+    border: 10px #453328 solid;
     z-index: 2;
 }
 
@@ -304,6 +358,7 @@ section {
     display: grid;
     place-items: center;
     color: aliceblue;
+    font-family: Genty;
 }
 
 .content:hover{
@@ -362,13 +417,10 @@ section {
     font-size: 35px;
 }
 
-.top-expensive-stores{
-    background-image: url(Images/cafe-bg4.png);
-}
 
 /*Shops*/
 .Shops {
-    background-image: url(Images/coffee_beanreal.png);
+    background-image: url(Images/coffeebeans-bg.png);
     font-size: larger;
     color: #fff; 
     padding: 40px 0; 
@@ -397,6 +449,7 @@ section {
 
 .rectangle-container p {
     margin-bottom: 20px; 
+    font-family: Genty Sans;
 }
 
 .rectangle-container button {
@@ -440,7 +493,11 @@ footer {
 }
 
 .wrapper-icons{
-    transform: translateY(180%);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-self:left;
+    padding-top: 100px;
 }
 
 .wrapper-icons .icon-btn:hover{
