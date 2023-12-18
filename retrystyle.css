@@ -21,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: #b39c82;
+    background-color: #453328;
 }
   
 html::-webkit-scrollbar {
@@ -285,6 +285,7 @@ section {
 .about-us {
     background-image: url(Images/cafe-bg.png);
     font-size: 24px;
+    border: 2px solid#111111;
 }
 
 
@@ -476,6 +477,15 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #453328;
+    color: #f5f5fa;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid#111111;
+}
+
+footer img{
+    height: 140px;
+    width: auto;
 }
 
 /*Icons*/
@@ -490,7 +500,7 @@ footer {
     background-color:antiquewhite;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease-out;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .wrapper-icons{
@@ -557,6 +567,10 @@ footer {
     color: #e1306c;  
 }
 
+.footer-icons{
+    padding: 0;
+}
+
 /* ALL SHOPS */
 .banner{
     text-align: center;
@@ -575,6 +589,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.stores p{
+    font-family: Genty Sans;
+}
+
+.stores h2{
+    font-size: 40px;
 }
 
 .shop-container1,
@@ -626,24 +648,6 @@ footer {
     color: #111111;
 }
 
-/* .showcase {
-    height: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: right;
-    align-items:center;
-    float: right;
-    padding: 0;
-}
-
-.showcase img{
-    height: 120px;
-    width: auto;
-    border-radius: 20px;
-    z-index: 1000;
-} */
-
-/* Contact Us */
 .about-container-title { 
     background-color: #f7b55fd0;
     padding: 40px;
