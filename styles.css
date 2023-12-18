@@ -5,14 +5,45 @@
     text-decoration: none;
     outline: none;
     border: none;
+    font-family: Genty;
 }
+
+@font-face {
+    font-family: Genty;
+    src: url(Images/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Genty Sans;
+    src: url(Images/GentySans-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #0148ad;
+    border-radius: .5rem;
+}
+
 /* Navigation Bar CSS */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 8vh;
-    background-color: #d2b48c;
+    background-color: #453328;
+    border-bottom:2px solid #f5f5fa;
 }
 
 .logo {
@@ -82,6 +113,7 @@ ul button {
 .slide img {
     width: 100%;
     height: 740px;
+    filter: brightness(50%);
 }
 
 .navigation-manual{
@@ -167,100 +199,273 @@ ul button {
     background-color: aliceblue;
 }
 
+.opening-text{
+    position: absolute;
+    z-index: 1001;
+    color: #fff;
+    padding-left: 50px;
+    transform: translateY(100%);
+}
+
+.opening-text h1:nth-of-type(1) {
+    font-size: 45px;
+}
+.opening-text h1:nth-of-type(2) {
+    font-size: 45px;
+    margin-top: 50px;
+}
+.opening-text p:nth-of-type(1) {
+    font-size: 30px;
+    font-family: Genty Sans;
+}
+.opening-text p:nth-of-type(2) {
+    font-family: Genty Sans;
+}
+.opening-text p:nth-of-type(3) {
+    font-family: Genty Sans;
+}
+
+
+
 /*About Us Section*/
 .logo-pic {
     position: absolute;
-    top: 0; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
     height: 200px;
     width: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     border-radius: 100px;
-    margin-top: 40px;
+    margin-top: 50px;
+    z-index: 1000;
+    border: 2px solid black;
+}
+
+.text-box{
+    background-color: #C2B19A;
+    border: 2px solid black;
+    container-type: inline-size;
+    display: grid;
+    place-items: center;
+    transform: translateY(20%);
+    padding: 60px;
+    border-radius: 50px;
+    line-height: 30px;
+}
+
+.text-box > p{
+    font-size: 1.5cqi;
+    text-align: justify;
+    font-family: Genty Sans;
+    text-align: center;
+}
+ 
+.text-box h1{
+    font-family: Genty; 
 }
 
 section {
     position:relative;
 }
 
-.Curves h1, p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 35px;
-}
 
-.About-Us, .Shops {
+.about-us, .Shops {
     min-height: 800px;
     padding: 60px;
 }
 
-.About-Us h1 {
-    margin: 200px 0 30px 0;
-    font-size: xx-large;
+.about-us h1 {
+    margin: 100px 0 30px 0;
+}
+
+.about-us {
+    background-image: url(Images/cafe-bg.png);
+    font-size: 24px;
 }
 
 
-.About-Us {
-    background-color: #d2b48c;
-    font-size: larger;
+/*Top*/
+.top-budget-stores, .top-expensive-stores{
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    font-family: Genty;
 }
+
+.top-budget-stores{
+    background-image: url(Images/budget-bg.png);
+    background-position: top center;
+    border-bottom: 10px dashed rgba(0, 0, 0, 0.3);
+}
+
+.top-expensive-stores{
+    background-image: url(Images/expensive-bg.png);
+    background-position: bottom center;
+}
+
+.top-budget-stores h1, .top-expensive-stores h1{
+    text-align: center;
+    z-index: 1;
+    transform: translateY(30%);
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-container .top:nth-of-type(1) {
+   transform: translateY(20%);
+}
+
+.top-container .top:nth-of-type(2) {
+    transform: translateY(10%);
+}
+
+ .top-container .top:nth-of-type(3) {
+    transform: translateY(20%);
+}
+
+.top {
+    width: 300px;
+    aspect-ratio: 2/3;
+    background-color: burlywood;
+    transform: translateY(16%);
+    overflow: hidden;
+    border-radius: 15px;
+    border: 0.25rem solid rgb(255, 255, 255 / 15%);
+    display:grid;
+    place-items: center;
+    border: 10px #453328 solid;
+    z-index: 2;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+    display: grid;
+    place-items: center;
+    color: aliceblue;
+    font-family: Genty;
+}
+
+.content:hover{
+    opacity: 1;
+}
+
+.content p{
+    font-size: 40px;
+}
+
+.top img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+}
+
+.top:hover > img {
+    animation: pulse 800ms ease-in-out;
+}
+.top-budget-stores h1, .top-expensive-stores h1{
+    padding-top: 20px;
+}
+
+.gold, .silver, .bronze {
+    position: absolute;
+    z-index: 1000;
+    height: 30%;
+    width: auto;
+}
+
+.gold{
+    transform: translateY(135%) translateX(45%);
+}
+
+.silver{
+    transform: translateY(155%) translateX(260%);
+}
+
+.bronze{
+    transform: translateY(155%) translateX(-170%);
+}
+
+@keyframes pulse {
+    from, to {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+}
+
+
+.top-stores h1 {
+    padding-top: 2rem;
+    font-size: 35px;
+}
+
 
 /*Shops*/
-.Shops{
-    background-image: url(Images/coffee_bean.png);
+.Shops {
+    background-image: url(Images/coffeebeans-bg.png);
     font-size: larger;
-}
-
-.Shops h1{
-    font-size: xx-large;
-    margin-bottom: 30px;
-}
-
-.rectangle-container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    background-color: burlywood;
-    height:60vh;
+    color: #fff; 
+    padding: 40px 0; 
     border: 2px solid black;
 }
 
+.Shops h1 {
+    font-size: xx-large;
+    margin-bottom: 20px; 
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: #C2B19A;
+    height: auto; 
+    border: 2px solid black;
+    text-align: justify;
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    transform: translateY(25%);
+}
+
+.rectangle-container p {
+    margin-bottom: 20px; 
+    font-family: Genty Sans;
+}
+
 .rectangle-container button {
-    height: 50px;
-    width: 50px;
-    left: 50%;
-    top: 50%;
+    display: block; 
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #d2b48c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
 }
 
-.waves, .waves2, .waves3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.waves svg, .waves2 svg, .waves3 svg {
-    position: relative;
-    display: block;
-    width: calc(155% + 1.3px);
-    height: 144px;
-}
-
-.waves .shape-fill {
-    fill: #f8ecdd;
-    
-}
-
-.waves2 .shape-fill {
-    fill: burlywood;
+.rectangle-container button:hover {
+    background-color: #b39c82; 
 }
 
 /*Footer*/
@@ -269,63 +474,157 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
-    background-color: burlywood;
+    background-color: #453328;
 }
 
- 
-/* Add a media query for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column; /* Change the header to a column layout on smaller screens */
-        height: auto;
-    }
-
-    .logo {
-        margin: 20px 0;
-    }
-
-    ul.navbar {
-        flex-direction: column; /* Change the navigation to a column layout on smaller screens */
-        text-align: center;
-    }
-
-    ul a {
-        margin-right: 0;
-    }
-
-    ul button {
-        margin-top: 10px;
-    }
-
-    .slideshow {
-        height: auto;
-    }
-
-    .slide-container {
-        height: auto;
-    }
-
-    .slider {
-        width: 100%;
-    }
-
-    .slide {
-        width: 100%;
-    }
-
-    .navigation-manual,
-    .navigation-auto {
-        display: none; /* Hide the manual and auto navigation on smaller screens */
-    }
-
-    .About-Us h1 {
-        margin: 20px 0;
-    }
-
-    .rectangle-container button {
-        margin-top: 10px;
-    }
+/*Icons*/
+.wrapper-icons .icon-btn{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #C2B19A;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    margin-top: 20px
 }
 
-/* Rest of your existing CSS code remains unchanged */
+.wrapper-icons{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-self:left;
+    padding-top: 100px;
+}
+
+.wrapper-icons .icon-btn:hover{
+    width: 170px;
+}
+
+.wrapper-icons .icon-btn .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-icons .icon-btn:nth-child(1):hover .icon{
+   background-color: #4267b2;
+}
+.wrapper-icons .icon-btn:nth-child(2):hover .icon{
+   background-color: #1da1f2;
+}
+.wrapper-icons .icon-btn:nth-child(3):hover .icon{
+   background-color: #e1306c;  
+}
+
+.wrapper-icons .icon-btn .icon i{
+    font-size: 25px;
+    line-height: 50px;
+    transform: translateX(50%);
+    color: white;
+}
+
+.wrapper-icons .icon-btn:nth-child(1) .icon i{
+    margin-left: 8px;
+}
+
+.wrapper-icons .icon-btn:nth-child(3) .icon i{
+    margin-left: 3px;
+}
+
+.wrapper-icons .icon-btn span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-icons .icon-btn:nth-child(1) span{
+    color: #4267b2;
+}
+ .wrapper-icons .icon-btn:nth-child(2) span{
+    color: #1da1f2;
+}
+ .wrapper-icons .icon-btn:nth-child(3) span{
+    color: #e1306c;  
+}
+
+/* ALL SHOPS */
+.banner{
+    height: 80px;
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    font-size: 30px;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-container1,
+.shop-container2 {
+    height: 50vh;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #453328;
+}
+
+.shop-container1 img,
+.shop-container2 img {
+    height: 38vh;
+    width: 66vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 3px solid #f5f5fa;
+    object-fit: cover;
+}
+
+.shop-container1 .textbox,
+.shop-container2 .textbox {
+    color: #f5f5fa;
+    flex: 1;
+    padding: 20px;
+}
+
+.shop-container1 .wrapper-icons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.shop-container2 .wrapper-icons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.shop-container2 {
+    background-color: #d2b48c;
+}
+
+.shop-container2 .textbox {
+    color: #111111;
+}
+
+.services-pic {
+    float: right;
+}
+
+.stores .wrapper-icons{
+    transform: translateY(115%);
+}
