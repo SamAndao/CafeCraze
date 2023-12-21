@@ -255,6 +255,7 @@ ul button {
     padding: 60px;
     border-radius: 50px;
     line-height: 30px;
+    color: #222;
 }
 
 .text-box > p{
@@ -273,7 +274,7 @@ section {
 }
 
 
-.about-us, .Shops {
+.about-us {
     min-height: 800px;
     padding: 60px;
 }
@@ -295,8 +296,9 @@ section {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 20px;
+    padding-top: px;
     font-family: Genty;
+    font-size: 30px;
 }
 
 .top-budget-stores{
@@ -313,7 +315,7 @@ section {
 .top-budget-stores h1, .top-expensive-stores h1{
     text-align: center;
     z-index: 1;
-    transform: translateY(30%);
+    transform: translateY(10%);
 }
 
 .top-container {
@@ -382,7 +384,8 @@ section {
     animation: pulse 800ms ease-in-out;
 }
 .top-budget-stores h1, .top-expensive-stores h1{
-    padding-top: 20px;
+    padding-top: 10px;
+    color: #222;
 }
 
 .gold, .silver, .bronze {
@@ -414,10 +417,6 @@ section {
 }
 
 
-.top-stores h1 {
-    padding-top: 2rem;
-    font-size: 35px;
-}
 
 
 /*Shops*/
@@ -427,6 +426,9 @@ section {
     color: #fff; 
     padding: 40px 0; 
     border: 2px solid black;
+    min-height: 500px;
+    padding: 60px;
+    color: #222;
 }
 
 .Shops h1 {
@@ -452,6 +454,7 @@ section {
 .rectangle-container p {
     margin-bottom: 20px; 
     font-family: Genty Sans;
+    text-align: center;
 }
 
 .rectangle-container button {
@@ -459,15 +462,17 @@ section {
     margin-top: 20px; 
     padding: 10px; 
     background-color: #d2b48c; 
-    color: #fff; 
+    color: #222; 
     border: none;
     border-radius: 5px; 
     cursor: pointer;
     transition: background-color 0.3s ease; 
+    border: 2px solid #222;
 }
 
 .rectangle-container button:hover {
-    background-color: #b39c82; 
+    background-color: #453328; 
+    color: white;
 }
 
 /*Footer*/
