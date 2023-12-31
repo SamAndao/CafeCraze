@@ -21,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: #453328;
+    background-color: #f9e7d0;
 }
   
 html::-webkit-scrollbar {
@@ -42,9 +42,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8vh;
-    background-color: #453328;
-    border-bottom:2px solid #f5f5fa;
+    height: 9vh;    
+    background-color: #bfaa8c;
+    border-bottom:2px solid#f9e7d0;
 }
 
 .logo {
@@ -688,7 +688,7 @@ footer img{
 }
 
 .about-container-title { 
-    background-color: #f7b55fd0;
+    background-color: #ffdfbe;
     padding: 40px;
     margin: 20px 0;
 }
