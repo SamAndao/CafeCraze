@@ -609,6 +609,7 @@ footer img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
 }
 
 .stores p{
@@ -621,7 +622,7 @@ footer img{
 
 .shop-container1,
 .shop-container2 {
-    height: 50vh;
+    height: 70vh;
     width: 100%;    
     display: flex;
     align-items: center;
@@ -629,13 +630,41 @@ footer img{
     background-color: #453328;
 }
 
-.shop-container1 img,
-.shop-container2 img {
-    height: 38vh;
-    width: 66vh;
+.main-pic {
+    height: 58vh;
+    width: 56vh;
     margin-right: 20px;
     margin-left: 20px;
     border: 3px solid #f5f5fa;
+    object-fit: cover;
+}
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.product {
+    height: 140px;
+    width: 140px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.item-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    border: #f5f5fa 2px solid;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -658,6 +687,11 @@ footer img{
     align-items: center;
     justify-content: end;
     width: 100%;
+    padding-top: 30px;
+}
+
+.shop-container1 .shop-icons{
+    padding-top: 30PX;
 }
 
 .shop-container2 {
