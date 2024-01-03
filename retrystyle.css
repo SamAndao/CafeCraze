@@ -29,6 +29,7 @@
 }
 
 html {
+    
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-color: #f9e7d0;
@@ -988,3 +989,47 @@ footer img{
     color: white;
 }
 
+.popup{
+    cursor:default;
+    height: 500vh;
+    width: 500vw;
+    position: fixed;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0%);
+    background-color: #111111a2;
+    opacity: 0;
+    transition: transform .1s, opacity .1s;
+}
+
+.popup--inside{
+    cursor:default;
+    position: absolute;
+    transform: translate(-60%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+}
+
+.show-popup{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 1;
+}
+
+.close-button{
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    border-radius: 100px;
+}
