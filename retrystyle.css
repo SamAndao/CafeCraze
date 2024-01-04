@@ -345,10 +345,11 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     padding: 15px;
     background-color: #C2B19A;
+    border: 3px solid #453328
 }
 
 .card img{
@@ -356,6 +357,7 @@ section {
     height: 350px;
     object-fit: cover;
     filter: brightness(60%);
+    border-radius: 20px;
 }
 
 .card h4 {
