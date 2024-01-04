@@ -87,7 +87,7 @@ ul a {
     font-family: archerbook;
 }
 
-ul a:hover {
+.navi-except:hover {
     color: #d2b48c;
     border-bottom: 2px solid #d2b48c;
     transition: ease-in 120ms;
