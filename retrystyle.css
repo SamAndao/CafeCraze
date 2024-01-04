@@ -86,14 +86,15 @@ ul button {
     cursor: pointer;
     height: 45px;
     padding: 0 20px 0 20px;
-    background-color: aliceblue;
+    background-color: #d2b48c;
     font-size: 20px;
     font-family: archerbook;
-    box-shadow: 0 0 10px    rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Genty;
 }
 
 ul button:hover{
-    background-color: #1da1f2;
+    background-color: #f5f5fa;
     transition: ease-in-out 300ms;
 }
 
@@ -788,12 +789,12 @@ footer img{
 }
 
 .about-background-image-1st {
-    background-image: url(Images/aboutbackground.jpg);
+    background-image: url(Images/ausbg.png);
     background-position: 50% 57%;  
 }
 .about-background-image-2nd {
-    background-image: url(Images/contactbackground.jpg);
-    background-position: 50% 17%;  
+    background-image: url(Images/cusbg.png);  
+    background-position: 50% 56%;
 }
 .about-div {
     display: flex;
@@ -807,8 +808,7 @@ footer img{
     text-align: center;
     font-family:'archerbook';
     font-size: 70px;    
-    color: black;
-    background-color: #ffdfbe;
+    color: white;
     padding: 0 25px;
     border-radius: 30px;
 }
@@ -942,6 +942,8 @@ footer img{
     height: 500px;  
     width: 700px;
     background-image: url(/Images/coffeebeans-bg.png);
+    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
