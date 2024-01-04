@@ -90,6 +90,7 @@ ul a {
 ul a:hover {
     color: #d2b48c;
     border-bottom: 2px solid #d2b48c;
+    transition: ease-in 120ms;
 }
 
 ul button {
@@ -100,13 +101,14 @@ ul button {
     font-size: 20px;
     font-family: archerbook;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-family: Genty;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 ul button:hover{
     background-color: #d2b48c;
     transition: ease-in-out 300ms;
+    border-bottom: none;
 }
 
 /* Slideshow */
@@ -356,7 +358,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 90%;
-    height: 590px;
+    height: 620px;
     border-radius: 15px;
     overflow: hidden;
     padding: 15px;
@@ -379,9 +381,10 @@ section {
 }
 
 .card p {
-    font-family:garamond;
+    font-family:archerbook;
     margin-bottom: 15px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .card:hover {
@@ -395,6 +398,7 @@ section {
 }
 
 .top-btn{
+    padding-top: 10px auto;
     width: 100%;
     display: flex;  
     justify-content: center;
