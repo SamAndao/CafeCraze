@@ -56,7 +56,7 @@ header {
     justify-content: space-between;
     height: 9vh;  
     border-bottom: black 2px solid;
-    background-color: #453328;
+    background-color: #4B3621;
 }
 
 .logo {
@@ -67,6 +67,10 @@ header {
 
 .logo a{
     color: aliceblue;
+}
+
+.logo a:hover{
+    color: #d2b48c;
 }
 
 ul.navbar {
@@ -82,11 +86,16 @@ ul a {
     font-family: archerbook;
 }
 
+ul a:hover {
+    color: #d2b48c;
+    border-bottom: 2px solid #d2b48c;
+}
+
 ul button {
     cursor: pointer;
     height: 45px;
     padding: 0 20px 0 20px;
-    background-color: #d2b48c;
+    background-color: #f5f5fa;
     font-size: 20px;
     font-family: archerbook;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -94,7 +103,7 @@ ul button {
 }
 
 ul button:hover{
-    background-color: #f5f5fa;
+    background-color: #d2b48c;
     transition: ease-in-out 300ms;
 }
 
@@ -795,6 +804,7 @@ footer img{
 .about-background-image-2nd {
     background-image: url(Images/cusbg.png);  
     background-position: 50% 56%;
+    border-top: #111 2px solid;
 }
 .about-div {
     display: flex;
