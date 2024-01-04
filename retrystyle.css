@@ -52,7 +52,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9vh;    
+    height: 9vh;  
+    border-bottom: black 2px solid;
+    background-color: #6F4436;
 }
 
 .logo {
@@ -216,28 +218,33 @@ ul button {
     position: absolute;
     z-index: 1001;
     color: #ffffcc;
-    text-shadow: 2px 2px 10px #f88a14;
+    /* text-shadow: 2px 2px 10px #f88a14; */
     padding-left: 50px;
     transform: translateY(100%);
+    bottom: 700px;   
 }
 
 .opening-text h1:nth-of-type(1) {
-    font-size: 45px;
+    font-size: 150px;   
+    font-family: 'Helvetica';
+    /* transform: translateY(-190%); */
+    font-weight:900;
 }
 .opening-text h1:nth-of-type(2) {
+    font-size: 45px;    
+    /* transform: translateY(-190%); */
+}
+
+.opening-text h1:nth-of-type(3) {   
     font-size: 45px;
-    margin-top: 50px;
+    /* transform: translateX(140%) translateY(-900%); */
 }
 .opening-text p:nth-of-type(1) {
     font-size: 30px;
     font-family: Genty Sans;
-}
-.opening-text p:nth-of-type(2) {
-    font-family: Genty Sans;
-}
-.opening-text p:nth-of-type(3) {
-    font-family: Genty Sans;
-}
+    /* transform: translateY(-900%); */
+}   
+
 
 
 
@@ -679,7 +686,7 @@ footer img{
   
 .about-contact-heading {
     text-align: center;
-    font-family:'Garamond';
+    font-family:'archerbook';
     font-size: 40px;
 }
   
@@ -712,7 +719,16 @@ footer img{
     box-shadow: 7px 5px black;
     border: 2px solid black;
     border-radius: 15px;
+    
+}
+
+.about-content-1st-background-1st{
     background: url(Images/fcf5b86a2b1ad489f0a945519bbe6f58.jpg) no-repeat center;
+    background-size: cover;
+}   
+
+.about-content-1st-background-2nd{
+    background: url(Images/CreatorpictureMark.jpg) no-repeat center;
     background-size: cover;
 }
   
@@ -727,20 +743,20 @@ footer img{
     border-radius: 15px;
     border: 2px solid black;
     width: 440px;
-    height: 400px;
+    height: 470px;
 }
   
 .about-content-heading {
     text-align:center;
-    font-family: Garamond;
-    font-size: 25px;
-    margin: 10px;
+    font-family: 'archerbook';
+    font-size: 30px;
+    margin-bottom: 25px;
 }
   
 .about-text {
     text-align: justify;
-    font-family: Garamond;  
-    font-size: 18px;
+    font-family: 'archerbook';  
+    font-size: 16px;
 }
   
 .container *{
