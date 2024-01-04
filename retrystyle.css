@@ -282,7 +282,8 @@ ul button:hover{
 .text-box > p{
     font-size: 1.5cqi;
     text-align: justify;
-    font-family: Genty Sans;
+    font-family: 'archerbook';
+    font-weight: 700;
     text-align: center;
 }
  
@@ -775,18 +776,37 @@ footer img{
     color: #111111;
 }
 
-.about-contact-container-title { 
-    background-color: #ffdfbe;
-    padding: 40px;
-    margin: 20px 0;
-    border-top: 2px  solid black;
+.about-contact-container-title {
+    background-size: cover; 
+    width: 100%;
+    height: 40vh;
     border-bottom: 2px  solid black;
+}
+
+.about-background-image-1st {
+    background-image: url(Images/aboutbackground.jpg);
+    background-position: 50% 57%;  
+}
+.about-background-image-2nd {
+    background-image: url(Images/contactbackground.jpg);
+    background-position: 50% 17%;  
+}
+.about-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;    
+    justify-content: center;
 }
   
 .about-contact-heading {
     text-align: center;
     font-family:'archerbook';
-    font-size: 40px;
+    font-size: 70px;    
+    color: black;
+    background-color: #ffdfbe;
+    padding: 0 25px;
+    border-radius: 30px;
 }
   
 .about-row {
