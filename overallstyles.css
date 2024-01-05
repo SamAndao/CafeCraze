@@ -466,28 +466,28 @@ section {
     background-color: #faedcb;
     border: 2px solid black;
     border-radius: 15px;
-    width: 550px;
-    height: 300px;
-
+    width: 35vw;
+    height: 36.5vh;
 }
 
 .home-button-content-heading{
     text-align:center;
     font-family: archerbook;
-    font-size: 35px;
+    font-size: 2.5vw ;
     margin: 18px;   
 }
 
 .home-button-text{
     text-align: center;
     font-family: archerbook;
-    font-size: 17px;
+    font-size: 1.05vw;
+    font-weight: 600;
 }
 
 .home-button-content button {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 64%;
+    top: 67%;
     left: 50%;
     display: block; 
     margin-top: 20px; 
@@ -499,6 +499,8 @@ section {
     cursor: pointer;
     transition: background-color 0.3s ease; 
     border: 2px solid #222;
+    width: 5.7vw;
+    height: 5.7vh;  
 }
 
 .home-button-content button:hover {
