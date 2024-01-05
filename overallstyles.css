@@ -212,23 +212,23 @@ ul button:hover{
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: aliceblue;
+    background-color: antiquewhite;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: aliceblue;
+    background-color: antiquewhite;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: aliceblue;
+    background-color: antiquewhite;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: aliceblue;
+    background-color: antiquewhite;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
-    background-color: aliceblue;
+    background-color: antiquewhite;
 }
 
 /* Opening text in Slideshow */
@@ -285,7 +285,7 @@ ul button:hover{
     border-radius: 100px;
     margin-top: 50px;
     z-index: 1000;
-    border: 2px solid black;
+    border: 2px solid black;    
 }
 
 .text-box{
